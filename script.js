@@ -1,3 +1,5 @@
+// None interface
+
 var total = 0;
 
 function Sum(value) {
@@ -30,18 +32,28 @@ function Radiciation(expoente) {
     return total
 }
 
-function Log10(value) {
-    if (value <= 0) {
-        console.log('Valor inválido igual ou menor que zero')
-    }
+function calculateLog(value, a, number) {
+    let b = true;
+    while (b) {
+        b = (value >= (10 ** a));
 
-    let result = 0;
-    let current = value;
-    while(current >= 10) {
-        current /= 10;
-        result++;
+        if (b) {
+            a += number;
+        }
     }
-    return result;
+    a -= number;
+    return a;
+}
+
+function Log10(value) {
+    let a = 0;
+
+    a = calculateLog(value, a, 1)
+    a = calculateLog(value, a, 0.1)
+    a = calculateLog(value, a, 0.01)
+    a = calculateLog(value, a, 0.001)
+    a = calculateLog(value, a, 0.0001)
+    return Number(a.toFixed(4));
 }
 
 function Operations() {
