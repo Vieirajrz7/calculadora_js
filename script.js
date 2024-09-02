@@ -1,3 +1,5 @@
+// None interface
+
 var total = 0;
 
 function Sum(value) {
