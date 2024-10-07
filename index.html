@@ -12,27 +12,27 @@
     <div class="calculator">
         <div class="calculator-screen" id="display">0</div>
         <div class="calculator-keys">
-            <button class="key" data-action="clear">C</button>
-            <button class="key" data-action="log">Log</button>
-            <button class="key" data-action="exp">xⁿ</button>
-            <button class="key" data-action="divide">÷</button>
-            <button class="key">1</button>
-            <button class="key">2</button>
-            <button class="key">3</button>
-            <button class="key" data-action="multiply">×</button>
-            <button class="key">4</button>
-            <button class="key">5</button>
-            <button class="key">6</button>
-            <button class="key" data-action="subtract">-</button>
-            <button class="key">7</button>
-            <button class="key">8</button>
-            <button class="key">9</button>
-            <button class="key" data-action="add">+</button>
+            <button class="key" onclick="Clear()">C</button>
+            <button class="key" onclick="Logarithm()">Log</button>
+            <button class="key" onclick="Potentiation()">xⁿ</button>
+            <button class="key" onclick="Division()">÷</button>
+            <button class="key" onclick="NumOne()">1</button>
+            <button class="key" onclick="NumTwo()">2</button>
+            <button class="key" onclick="NumThree()">3</button>
+            <button class="key" onclick="Multiplication()">×</button>
+            <button class="key" onclick="NumFour()">4</button>
+            <button class="key" onclick="NumFive()">5</button>
+            <button class="key" onclick="NumSix()">6</button>
+            <button class="key" onclick="Subtraction()">-</button>
+            <button class="key" onclick="NumSeven()">7</button>
+            <button class="key" onclick="NumEight()">8</button>
+            <button class="key" onclick="NumNine()">9</button>
+            <button class="key" onclick="Sum()">+</button>
 
-            <button class="key">0</button>
-            <button class="key" data-action="sqrt">√</button>
+            <button class="key" onclick="NumZero()">0</button>
+            <button class="key" onclick="SquareRoot()">√²</button>
             <button class="key">.</button>
-            <button class="key" data-action="result">=</button>
+            <button class="key" id="equalsBtn" onclick="Equals()">=</button>
 
         </div>
     </div>
